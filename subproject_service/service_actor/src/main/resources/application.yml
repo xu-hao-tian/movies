@@ -1,0 +1,25 @@
+server:
+  # 端口
+  port: 8081
+spring:
+  application:
+    # 服务名
+    name: service_actor
+  profiles:
+    # 开发环境
+    active: dev
+  # mysql 配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/movies?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+  # json 的时间格式
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  # 注册中心
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
