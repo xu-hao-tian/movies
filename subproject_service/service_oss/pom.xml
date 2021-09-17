@@ -9,31 +9,29 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <!--演员功能编写实现-->
-    <artifactId>service_actor</artifactId>
+    <!--阿里云oss-->
+    <artifactId>service_oss</artifactId>
 
     <dependencies>
+        <!--阿里云-->
+        <dependency>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+        </dependency>
+        <!--日期工具栏-->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+        </dependency>
         <!--添加工具模块-->
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>common_util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--添加依赖-->
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>service_base</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>easyexcel</artifactId>
-            <version>2.1.1</version>
-        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.2</version>
         </dependency>
     </dependencies>
 </project>

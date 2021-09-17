@@ -1,6 +1,7 @@
 package com.example.movies.controller;
 
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2021-09-02
  */
 @RestController
-@RequestMapping("/movies/edu-movies")
+@RequestMapping("/edu-movies")
 public class EduMoviesController {
 
 }

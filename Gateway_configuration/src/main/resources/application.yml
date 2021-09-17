@@ -1,0 +1,45 @@
+server:
+  # 端口号
+  port: 7000
+spring:
+  application:
+    # 服务名
+    name: service-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          # 网关激活
+          enabled: true
+      # 跨域
+      routes:
+        - id: gateway-user
+          # 访问注册的服务名称
+          uri: lb://service-actor
+          # 放行路径
+          predicates:
+          - Path=/user/**
+
+        - id: gateway-actor
+          # 访问注册的服务名称
+          uri: lb://service-actor
+          # 放行路径
+          predicates:
+          - Path=/edu-actor/**
+
+        - id: gateway-movies
+          # 访问注册的服务名称
+          uri: lb://service-actor
+          # 放行路径
+          predicates:
+          - Path=/edu-movies/**
+
+        - id: gateway-oss
+          # 访问注册的服务名称
+          uri: lb://service-oss
+          # 放行路径
+          predicates:
+          - Path=/oss/**
+    nacos:
+      discovery:
+        server-addr: localhost:8848

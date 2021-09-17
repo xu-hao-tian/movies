@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <!--配置公有工具模块-->
     <artifactId>public_common</artifactId>
     <packaging>pom</packaging>
     <modules>

@@ -3,21 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>public_common</artifactId>
+        <artifactId>movies</artifactId>
         <groupId>com.example</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <!--API文档配置-->
-    <artifactId>service_base</artifactId>
+    <!--网关配置-->
+    <artifactId>Gateway_configuration</artifactId>
 
     <dependencies>
-        <!--添加工具模块-->
+        <!--网关依赖-->
         <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>common_util</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+
+        <!--nacos依赖-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
     </dependencies>
 

@@ -8,10 +8,12 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <!--编写代码，实现功能-->
     <artifactId>subproject_service</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>service_actor</module>
+        <module>service_oss</module>
     </modules>
 
     <dependencies>

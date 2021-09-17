@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/user")
-@CrossOrigin
 public class ActorLoginController {
     @PostMapping("/login")
     public R login() { // 登录

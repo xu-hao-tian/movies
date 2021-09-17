@@ -4,7 +4,7 @@ server:
 spring:
   application:
     # 服务名
-    name: service_actor
+    name: service-actor
   profiles:
     # 开发环境
     active: dev

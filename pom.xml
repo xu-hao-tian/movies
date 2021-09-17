@@ -19,6 +19,7 @@
     <modules>
         <module>subproject_service</module>
         <module>public_common</module>
+        <module>Gateway_configuration</module>
     </modules>
 
     <!-- Spring Boot 的父级依赖-->

@@ -1,7 +1,6 @@
 package com.example.exceptionhandler;
 
 import com.example.util.R;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

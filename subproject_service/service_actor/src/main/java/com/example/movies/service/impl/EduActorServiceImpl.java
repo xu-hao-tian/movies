@@ -7,8 +7,8 @@ import com.example.movies.mapper.EduActorMapper;
 import com.example.movies.query.ActorQuery;
 import com.example.movies.service.EduActorService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.HashMap;
 import java.util.List;
@@ -76,7 +76,7 @@ public class EduActorServiceImpl extends ServiceImpl<EduActorMapper, EduActor> i
             // 模糊
             queryWrapper.like("name", name);
         }
-        if (level != null && !StringUtils.isEmpty(level + "")) {
+        if (level != null && !StringUtils.isEmpty(level)) {
             // 等于
             queryWrapper.eq("level", level);
         }
